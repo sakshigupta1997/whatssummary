@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler
 
 def callback_alarm(bot, job):
-    bot.send_message(chat_id=job.context, text='Alarm')
+    bot.send_message(chat_id=chat_id, text='Alarm')
 
 def callback_timer(bot, update, job_queue):
     bot.send_message(chat_id=update.message.chat_id,
